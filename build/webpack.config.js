@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var chalk = require('chalk');
 var webpackDevServer = require("webpack-dev-server");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
@@ -12,7 +13,6 @@ var config = configKey == 'build' ? configs.build : configs.dev;
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
-
 module.exports = {
     entry: {
         app: config.main_path
