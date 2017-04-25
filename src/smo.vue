@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            msg: "上海术木医疗有限公司"
+            msg: "test"
         }
     }
 }
